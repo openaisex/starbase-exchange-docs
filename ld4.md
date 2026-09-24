@@ -52,13 +52,13 @@ cpupower frequency-set --governor performance
 ---
 
 ```
-#4. 网络延迟连通性测试
+##4. 网络延迟连通性测试
 完成 Cross-Connect 物理连接后，可使用 ping 和 onload（若使用 Solarflare 网卡）验证网络延迟：
 
-## 测量以太网子网网关延迟
+### 测量以太网子网网关延迟
 ping -c 100 -i 0.2 10.140.20.1
 
-## 使用 Solarflare OpenOnload 绕过内核栈直接访问 SBE 端口
+### 使用 Solarflare OpenOnload 绕过内核栈直接访问 SBE 端口
 onload --profile=latency ./sbe_client --ip 10.140.20.100 --port 9001
 
 ```
