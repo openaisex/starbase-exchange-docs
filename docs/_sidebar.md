@@ -1,10 +1,8 @@
-* **指南与架构**
-  * [项目简介](README.md)
-  * [快速开始](quickstart.md)
+* [🏠 首页](README.md)
 
-* **API & 协议**
+* **协议与架构**
   * [SBE 协议说明](sbe-protocol.md)
-  * [接口列表](api-reference.md)
+  * [LD4 机房网络](ld4-networking.md)
 
-* **其它**
-  * [常见问题](faq.md)
+* **社区与支持**
+  * [Telegram 交流群](https://t.me/starbaseexchange)
