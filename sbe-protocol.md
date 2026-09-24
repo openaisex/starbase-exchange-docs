@@ -51,10 +51,12 @@ void parse_packet(const char* buffer) {
 
 ---
 
-## 4. 最佳实践指南
+---
 
-1.  字节对齐：使用 #pragma pack(push, 1) 或语言原生的内存对齐控制，避免结构体填充（Padding）导致偏移错位。
+# 4. 最佳实践指南
 
-2.  端序转换：SBE 采用 Little-Endian（小端序） 存储，x86 / ARM 架构主机可直接指针转换读取。
+1. **字节对齐**：使用 `#pragma pack(push, 1)` 或语言原生的内存对齐控制，避免结构体填充（Padding）导致偏移错位。
 
-3.  TCP 粘包处理：先读取前 8 字节 Header 确认 blockLength，再精确读取对应长度的 Body。
+2. **端序转换**：SBE 采用 Little-Endian（小端序）存储，x86 / ARM 架构主机可直接指针转换读取。
+
+3. **TCP 粘包处理**：先读取前 8 字节 Header 确认 blockLength，再精确读取对应长度的 Body。
