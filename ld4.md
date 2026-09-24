@@ -48,19 +48,3 @@ sysctl -w net.core.wmem_max=67108864
 ### 3.2 禁用 CPU 节电模式 (CPU Governor)
 确保服务器 CPU 运行在最高性能状态：
 cpupower frequency-set --governor performance
-
----
-
-```
-
-##4. 网络延迟连通性测试
-完成 Cross-Connect 物理连接后，可使用 ping 和 onload（若使用 Solarflare 网卡）验证网络延迟：
-
-### 测量以太网子网网关延迟
-ping -c 100 -i 0.2 10.140.20.1
-
-### 使用 Solarflare OpenOnload 绕过内核栈直接访问 SBE 端口
-onload --profile=latency ./sbe_client --ip 10.140.20.100 --port 9001
-
-```
-注意：如果遇到丢包或 RTT 波动，请联系 Telegram 运维技术支持通道：Starbase Exchange Support。
