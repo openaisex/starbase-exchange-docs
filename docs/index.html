@@ -10,27 +10,22 @@
 <body>
   <div id="app">正在加载文档...</div>
   <script>
-  window.$docsify = {
-    name: 'Starbase Exchange Docs',
-    homepage: 'README.md',
-    repo: 'https://github.com/starbaseexchange',
-    loadSidebar: true,      // 开启侧边栏
-    alias: {
-      '/.*/_sidebar.md': '/_sidebar.md'  // 👈 加上这行防御性别名，防止子路径找不到侧边栏
-    },
-    subMaxLevel: 2,
-    search: {
-      maxAge: 86400000,
-      paths: 'auto',
-      placeholder: '搜索文档内容...',
-      noData: '未找到相关结果',
-      depth: 6
+    window.$docsify = {
+      name: 'Starbase Exchange Docs',
+      homepage: 'README.md',
+      repo: 'https://github.com/starbaseexchange',
+      loadSidebar: true,   // 👈 在 docs/index.html 中开启侧边栏
+      subMaxLevel: 2,
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: '搜索文档内容...',
+        noData: '未找到相关结果',
+        depth: 6
+      }
     }
-  }
-</script>
-  <!-- Docsify v4 主程序 -->
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <!-- 搜索插件 -->
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
