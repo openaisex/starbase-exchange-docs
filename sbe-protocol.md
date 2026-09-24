@@ -51,9 +51,7 @@ void parse_packet(const char* buffer) {
 
 ---
 
----
-
-# 4. 最佳实践指南
+## 4. 最佳实践指南
 
 1. **字节对齐**：使用 `#pragma pack(push, 1)` 或语言原生的内存对齐控制，避免结构体填充（Padding）导致偏移错位。
 
