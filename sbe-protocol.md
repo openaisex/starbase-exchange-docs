@@ -49,6 +49,7 @@ void parse_packet(const char* buffer) {
     std::cout << "Block Length: " << header->blockLength << " bytes" << std::endl;
 }
 
+```
 ---
 
 ## 4. 最佳实践指南
