@@ -51,6 +51,7 @@ cpupower frequency-set --governor performance
 
 ---
 
+```bash
 ##4. 网络延迟连通性测试
 
 完成 Cross-Connect 物理连接后，可使用 ping 和 onload（若使用 Solarflare 网卡）验证网络延迟：
