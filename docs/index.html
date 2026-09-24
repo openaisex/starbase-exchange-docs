@@ -2,30 +2,25 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>StarbaseExchange Docs</title>
+  <title>Starbase Exchange Docs</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">正在加载文档...</div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
       name: 'Starbase Exchange Docs',
-      homepage: 'README.md',
-      repo: 'https://github.com/starbaseexchange',
-      loadSidebar: true,   // 👈 在 docs/index.html 中开启侧边栏
-      subMaxLevel: 2,
-      search: {
-        maxAge: 86400000,
-        paths: 'auto',
-        placeholder: '搜索文档内容...',
-        noData: '未找到相关结果',
-        depth: 6
-      }
+      repo: 'https://github.com/openaisex/starbase-exchange-docs',
+      loadSidebar: true,
+      basePath: '/starbase-exchange-docs/docs/',
+      subMaxLevel: 3,
+      auto2top: true
     }
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
